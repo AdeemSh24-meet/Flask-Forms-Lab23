@@ -13,7 +13,7 @@ password = "123"
 facebook_friends=["Loai","Kenda","Avigail", "George", "Fouad", "Gi"]
 
 
-@app.route('/')  # '/' for the default page
+@app.route('/', methods==[post])  # '/' for the default page
 def login():
   return render_template('login.html')
   
